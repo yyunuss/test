@@ -49,19 +49,18 @@
 int gpio_export(unsigned int gpio)
 {
 	int fd, len;
-	char buf[MAX_BUF];
-
-	fd = open(SYSFS_GPIO_DIR "/export", O_WRONLY);
-	if (fd < 0) {
+           char buf[MAX_BUF];
+  fd = open(SYSFS_GPIO_DIR "/export", O_WRONLY);
+          	if (fd < 0) {
 <<<<<<< HEAD
 		perror("ggfgsfgsgsfgsfgpio/export");
 =======
 		perror("gpio/export");
->>>>>>> 2eab61e34a451047ae626183538c5c2b65e57785
+    >>>>>>> 2eab61e34a451047ae626183538c5c2b65e57785
 		return fd;
 	}
-
-	len = snprintf(buf, sizeof(buf), "%d", gpio);
+  
+               	len = snprintf(buf, sizeof(buf), "%d", gpio);
 	write(fd, buf, len);
 	close(fd);
 
