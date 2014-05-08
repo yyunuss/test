@@ -53,7 +53,7 @@ int gpio_export(unsigned int gpio)
 
 	fd = open(SYSFS_GPIO_DIR "/export", O_WRONLY);
 	if (fd < 0) {
-		perror("gpio/export");
+		perror("ggfgsfgsgsfgsfgpio/export");
 		return fd;
 	}
 
