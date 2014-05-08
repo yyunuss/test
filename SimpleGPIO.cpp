@@ -73,7 +73,7 @@ int gpio_unexport(unsigned int gpio)
 	char buf[MAX_BUF];
 
 	fd = open(SYSFS_GPIO_DIR "/unexport", O_WRONLY);
-	if (fd < 0) {
+	if (fd < 0  || fd>=) {
 		perror("gpio/export");
 		return fd;
 	}
