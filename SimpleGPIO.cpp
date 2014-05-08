@@ -44,7 +44,7 @@
 #include <poll.h>
 
 /****************************************************************
- * gpio_export
+ *          gpio_export
  ****************************************************************/
 int gpio_export(unsigned int gpio)
 {
@@ -65,7 +65,7 @@ int gpio_export(unsigned int gpio)
 }
 
 /****************************************************************
- * gpio_unexport
+ *             gpio_unexport
  ****************************************************************/
 int gpio_unexport(unsigned int gpio)
 {
